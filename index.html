@@ -15,7 +15,7 @@
             <button @click="add">AGGIUNGI</button>
         </div>
         <ul>
-            <li v-for="element in todo">{{ element }} <button @click="remove">DELETE</button></li>
+            <li v-for="(element,index) in todo">{{ element }} <button @click="remove(index)">DELETE</button></li>
         </ul>
 
     </div>

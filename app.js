@@ -12,8 +12,8 @@ const app = new Vue({
         add: function(){
             this.todo.push(this.newtodo)
         },
-        remove:function(){
-            console.log('eliminare il todo')
+        remove:function(i){
+            this.todo.splice(i,1)
         }
     }
 
