@@ -10,8 +10,12 @@
 </head>
 <body>
     <div id="app">
+        <div class="new-to-do"> 
+            <input type="text" v-model="newtodo" placeholder="aggiungi cose da fare...">
+            <button @click="add">AGGIUNGI</button>
+        </div>
         <ul>
-            <li v-for="user in todo">{{ user }}</li>
+            <li v-for="element in todo">{{ element }} <button @click="remove">DELETE</button></li>
         </ul>
 
     </div>
